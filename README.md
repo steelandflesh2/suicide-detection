@@ -92,7 +92,7 @@ data = {
 response = requests.post(url, json=data)
 result = response.json()
 
-if result['prediction'] == 'suicidal':
+if result['prediction'] == 'suicide':
     print("Warning: This message may indicate suicidal thoughts. Seek help immediately.")
 else:
     print("This message seems non-suicidal.")
@@ -111,7 +111,7 @@ suicide-detection/
 │
 ├── dataset.csv                # Dataset for training
 |
-├── notebook.ipynb            # Jupyter notebook
+├── notebook.ipynb             # Jupyter notebook
 │
 ├── requirements.txt           # Python dependencies
 ├── README.md                  # Project documentation
@@ -123,9 +123,10 @@ suicide-detection/
 There are several areas where the project can be further enhanced:
 
 1. **Hyperparameter Tuning**: Experiment with different machine learning algorithms and hyperparameters to improve accuracy.
-2. **Advanced NLP**: Implement more advanced techniques like word embeddings (Word2Vec, GloVe), or transformer-based models like BERT for better context understanding.
+2. **Advanced NLP**: Implement more advanced techniques like stemming.
 3. **Model Evaluation**: Evaluate the model on additional metrics (precision, recall, F1-score) to better understand its performance on imbalanced datasets.
-4. **Scalability for API**: Consider deploying the API with a production-ready setup, such as Docker, Kubernetes, or cloud platforms like AWS or Azure. Also implement rate-limiting and abuse prevention in the API.
+4. **Scalability for API**: Make the API abuse-prone, implement rate-limiting and scale it to handle load.
+5. **Explore other algorithms/neural networks**: Logistic regression is used due to its lightweight nature in this implementation, however advanced neural networks like RNNs, transformers etc could be used as well.
 
 ## Contribution
 
