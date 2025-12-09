@@ -122,11 +122,12 @@ suicide-detection/
 
 There are several areas where the project can be further enhanced:
 
-1. **Hyperparameter Tuning**: Experiment with different machine learning algorithms and hyperparameters to improve accuracy.
+1. **Hyperparameter Tuning**: Experiment with different hyperparameters to improve accuracy using GridSearchCV or RandomSearchCV.
 2. **Advanced NLP**: Implement more advanced techniques like stemming.
-3. **Model Evaluation**: Evaluate the model on additional metrics (precision, recall, F1-score) to better understand its performance on imbalanced datasets.
+3. **Model Evaluation**: Evaluate the model on additional metrics (precision, F1-score, confusion matrix) to better understand its performance on imbalanced datasets.
 4. **Scalability for API**: Make the API abuse-prone, implement rate-limiting and scale it to handle load.
 5. **Explore other algorithms/neural networks**: Logistic regression is used due to its lightweight nature in this implementation, however advanced neural networks like RNNs, transformers etc could be used as well.
+6. **More feature engineering**: Focusing more on EDA and adding some more feature classes could potentially boost accuracy.
 
 ## Contribution
 
